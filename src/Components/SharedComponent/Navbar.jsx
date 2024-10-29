@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderBtn from './HeaderBtn';
-import PrimaryBtn from '../../Components/SharedComponent/PrimaryBtn';
+import PrimaryBtn from './Buttons/PrimaryBtn';
 import PlusIco from '../../assets/HomePage/plusIcon.svg';
 import LightLogo from '../../assets/HomePage/DarkLogo.svg';
 import DarkLogo from '../../assets/HomePage/LightLogo.svg';

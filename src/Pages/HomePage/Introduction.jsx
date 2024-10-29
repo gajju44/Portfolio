@@ -1,5 +1,5 @@
 import React from 'react';
-import SecondaryBtn from '../../Components/SharedComponent/SecondaryBtn';
+import SecondaryBtn from '../../Components/SharedComponent/Buttons/SecondaryBtn';
 import DownloadLogo from '../../assets/HomePage/Download.svg';
 
 function Introduction() {

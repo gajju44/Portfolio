@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar.jsx';
+import Navbar from '../../Components/SharedComponent/Navbar.jsx';
 import Introduction from './Introduction.jsx';
 
 function HomePage() {
