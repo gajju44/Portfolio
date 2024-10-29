@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+:root {
+  --Sora: 'Sora', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  
+ --PrimaryColor:#8750f7;
+ --DarkBG:#0f0715;
+ --LightBG:#ffff;
+ --DarkText:#dddddd;
+ --LightText:#2a1454;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+.font-sora{
+font-family: var(--Sora);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.PrimaryBtnGredient{
+  background: linear-gradient(to right, var(--PrimaryColor) 0%, var(--LightText) 51%, var(--PrimaryColor) 100%);
+  background-size: 200%;
+}
+
+.Hero-Title{
+  background: linear-gradient(to right, var(--PrimaryColor) 0%, var(--LightBG) 100%);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--LightText);
+    background-color: var(--LightBG);
+  }
+
+  button {
+    background-color: transparent;
+  }
+}
+
+@media (prefers-color-scheme: Dark) {
+  :root {
+    
+    background-color: var(--DarkBG);
+    color:var(--DarkText) ;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: transparent;
+  }
+}
