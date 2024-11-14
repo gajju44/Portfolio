@@ -9,6 +9,7 @@
 
 
 
+
 :root {
   --Sora: 'Sora', sans-serif;
   line-height: 1.5;
@@ -19,62 +20,75 @@
  --PrimaryColor:#8750f7;
  --DarkBG:#0f0715;
  --LightBG:#ffff;
- --DarkText:#dddddd;
+ --DarkText:#ffff;
  --LightText:#2a1454;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: thin;
+    scrollbar-color: #8750f7 #2a1454;
+}
+
+
+
+.blur{
+position: absolute;
+width: 322px;
+height: 308px;
+right: -200px;
+top: -300px;
+z-index: -1;
+background: linear-gradient(260deg, #8750f7 0%, rgba(115, 67, 210, 0) 100%);
+/* opacity: 0.59; */
+filter: blur(164.5px);
+border-radius: 9999px;
 }
 
 
 
 
 .font-sora{
-font-family: var(--Sora);
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-.PrimaryBtnGredient{
-  background: linear-gradient(to right, var(--PrimaryColor) 0%, var(--LightText) 51%, var(--PrimaryColor) 100%);
-  background-size: 200%;
-}
-
-.Hero-Title{
-  background: linear-gradient(to right, var(--PrimaryColor) 0%, var(--LightBG) 100%);
-  -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: var(--LightText);
-    background-color: var(--LightBG);
+  font-family: var(--Sora);
   }
-
-  button {
-    background-color: transparent;
+  
+  
+  
+  .PrimaryBtnGredient{
+    background: linear-gradient(to right, var(--PrimaryColor) 0%, var(--LightText) 51%, var(--PrimaryColor) 100%);
+    background-size: 200%;
   }
-}
-
-@media (prefers-color-scheme: Dark) {
-  :root {
-    
-    background-color: var(--DarkBG);
-    color:var(--DarkText) ;
+  
+  .Hero-Title{
+    background: linear-gradient(to right, var(--PrimaryColor) 0%, var(--LightBG) 100%);
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
-  a:hover {
-    color: #747bff;
+  
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: var(--LightText);
+      background-color: var(--LightBG);
+    }
+  
+    button {
+      background-color: transparent;
+    }
   }
-  button {
-    background-color: transparent;
+  
+  @media (prefers-color-scheme: Dark) {
+    :root {
+      
+      background-color: var(--DarkBG);
+      color:var(--DarkText) ;
+    }
+  
+    button {
+      background-color: transparent;
+    }
   }
-}
+  
+  
+  
+  
