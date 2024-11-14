@@ -5,8 +5,13 @@ import Introduction from './Introduction.jsx';
 function HomePage() {
   return (
    <>
-   <div className='flex flex-col justify-center font-sora'>
+   <div className='flex flex-col items-center gap-20 w-full font-sora'>
    <Navbar/>
+   <Introduction/>
+   <Introduction/>
+   <Introduction/>
+   <Introduction/>
+   <Introduction/>
    <Introduction/>
    </div>
    </>
