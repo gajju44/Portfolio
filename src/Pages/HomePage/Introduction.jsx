@@ -1,17 +1,21 @@
 import React from "react";
 import SecondaryBtn from "../../Components/SharedComponent/Buttons/SecondaryBtn";
 import DownloadLogo from "../../assets/HomePage/DownloadLogo.jsx";
-import Gajju from "../../assets/HomePage/unnamed.webp";
+import Gajju from "../../assets/HomePage/profile.webp";
 import { Download, Twitter, Instagram, Linkedin, Github } from "lucide-react";
 
 function Introduction() {
   return (
     <>
       <div className="relative flex flex-col items-start  w-full  xl:max-w-[1320px] 2xl:max-w-[1400px]  mx-auto ">
-      <svg viewBox="0 0 1320 300">
-        <text x="50%" y="50%" textAnchor="middle" className="animate-stroke">
+      
+
+      <svg viewBox="0 0 1320 300" className="animate-stroke">
+        <text x="50%" y="50%" textAnchor="middle" className="svgtext">
           HI        </text>
       </svg>
+
+
       <div className="blur"/>
         <div className="flex gap-52 w-full flex-row">
           {/* {from here to */}
@@ -62,11 +66,11 @@ function Introduction() {
           </div>
           {/* to here is intro text and btn */}
           <div className="blur !bottom-0 !top-auto left-[55%] !w-[220px] !h-[220px]"/>
-          <div className="relative">
+          <div className="relative -top-6">
             <img
               src={Gajju}
               alt="Profile"
-              className="img-blur mt-4 w-[472px] h-[506px] duration-300 transition-all rounded-[40px] rotate-[4deg] border-[2px] hover:rotate-0 hover:border-[#8750f7] border-[#2a1454]"
+              className="img-blur mt-4 w-[472px] h-[506px] duration-500 transition-all rounded-[40px] rotate-[4deg] border-[2px] hover:rotate-0 hover:border-[#8750f7] border-[#2a1454]"
             />
           </div>
         </div>
