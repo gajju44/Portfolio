@@ -39,7 +39,7 @@ function Navbar() {
   return (
     <>
     
-    <div className='flex gap-4  justify-center items-center w-full fixed py-5 top-0 '>
+    <div className='flex gap-4  justify-center items-center right-0 top-0 z-50 w-full sticky py-5  '>
         <div className='mx-auto justify-between items-center min-w-[1320px] flex'>
         <div className='flex  px-3 items-center gap-5'>
                 <img src={DarkLogo} alt="Logo" className='h-14 w-14' />
