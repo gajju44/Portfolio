@@ -8,7 +8,10 @@ function Introduction() {
   return (
     <>
       <div className="relative flex flex-col items-start  w-full  xl:max-w-[1320px] 2xl:max-w-[1400px]  mx-auto ">
-        
+      <svg viewBox="0 0 1320 300">
+        <text x="50%" y="50%" textAnchor="middle" className="animate-stroke">
+          HI        </text>
+      </svg>
       <div className="blur"/>
         <div className="flex gap-52 w-full flex-row">
           {/* {from here to */}

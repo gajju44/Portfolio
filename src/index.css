@@ -30,6 +30,24 @@
     scrollbar-color: #8750f7 #2a1454;
 }
 
+.animate-stroke {
+  font-size: 200px; /* Adjust the font size as per your design */
+  font-family: var(--Sora);
+  fill: transparent;
+  stroke: #8750f7;
+  stroke-width: 2px;
+  letter-spacing: 2px;
+  animation: breathing 3s ease-in-out infinite; /* Apply the breathing animation */
+}
+
+@keyframes breathing {
+  0%, 100% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.1); /* Scales up by 10% */
+  }
+}
 
 
 .blur{
