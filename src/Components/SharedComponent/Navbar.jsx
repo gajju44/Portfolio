@@ -26,7 +26,7 @@ function Navbar() {
 
         <div className='flex gap-10 items-center'>
             {NavLinks.map((data,index)=>(
-               <HeaderBtn key={index} Img={data.img} Text={data.text}/> ) )}
+               <HeaderBtn key={index} Img={data.img} Link={data.Link} Text={data.text}/> ) )}
                <PrimaryBtn Text={'Hire Me!'} />
         </div>
         
