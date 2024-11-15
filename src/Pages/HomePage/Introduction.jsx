@@ -53,19 +53,19 @@ function Introduction() {
                 {" "}
                 {"Download CV"} <DownloadLogo height={18} width={18} />
               </SecondaryBtn>
-              <SecondaryBtn className="w-fit second relative overflow-hidden  rounded-full !py-2 !px-2 h-fit">
+              <SecondaryBtn Link='https://www.instagram.com/gajendra_naphade' className="w-fit second relative overflow-hidden  rounded-full !py-2 !px-2 h-fit">
                 <Instagram size={20} />
               </SecondaryBtn>
-              <SecondaryBtn className="w-fit second relative overflow-hidden  rounded-full !py-2 !px-2 h-fit">
-                <Github size={20} />
+              <SecondaryBtn Link='https://github.com/gajju44' className="w-fit second relative overflow-hidden  rounded-full !py-2 !px-2 h-fit">
+                <Github  size={20} />
               </SecondaryBtn>
-              <SecondaryBtn className="w-fit second relative overflow-hidden  rounded-full !py-2 !px-2 h-fit">
-                <Linkedin size={20} />
+              <SecondaryBtn Link='https://www.linkedin.com/in/gajendra-naphade/' className="w-fit second relative overflow-hidden  rounded-full !py-2 !px-2 h-fit">
+                <Linkedin  size={20} />
               </SecondaryBtn>
             </div>
           </div>
           {/* to here is intro text and btn */}
-          <div className="blur !bottom-0 !top-auto left-[55%] !w-[220px] !h-[220px]"/>
+          <div className="blur !bottom-0 !top-auto left-[49%] !w-[240px] !h-[240px]"/>
           <div className="relative -top-6">
             <img
               src={Gajju}

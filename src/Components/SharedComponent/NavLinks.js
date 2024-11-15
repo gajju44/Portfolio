@@ -4,8 +4,10 @@ import PlusIco from '../../assets/HomePage/plusIcon.svg';
  const NavLinks=[
     {
         text:'Home ',
-        img:PlusIco,
+        // img:PlusIco,
+        img:'',
         Link:'/',
+     
     },
     {
         text:'About',
@@ -23,8 +25,7 @@ import PlusIco from '../../assets/HomePage/plusIcon.svg';
         Link:'/Portfolios',
     },
     {
-        text:'Blog ',
-        img:PlusIco,
+        text:'Testimonial ',
         Link:'/Blog',
     },
     {
