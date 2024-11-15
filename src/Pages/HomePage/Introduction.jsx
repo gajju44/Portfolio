@@ -49,17 +49,17 @@ function Introduction() {
             </div>
 
             <div className="flex items-center gap-6 mt-10">
-              <SecondaryBtn className={"!items-start text-[17px] font-normal !leading-[21px]"}>
+              <SecondaryBtn className={"!items-start hover:bg-[#8750f7] text-[17px] font-normal !leading-[21px]"}>
                 {" "}
                 {"Download CV"} <DownloadLogo height={18} width={18} />
               </SecondaryBtn>
-              <SecondaryBtn className="w-fit  rounded-full !py-2 !px-2 h-fit">
+              <SecondaryBtn className="w-fit second relative overflow-hidden  rounded-full !py-2 !px-2 h-fit">
                 <Instagram size={20} />
               </SecondaryBtn>
-              <SecondaryBtn className="w-fit  rounded-full !py-2 !px-2 h-fit">
+              <SecondaryBtn className="w-fit second relative overflow-hidden  rounded-full !py-2 !px-2 h-fit">
                 <Github size={20} />
               </SecondaryBtn>
-              <SecondaryBtn className="w-fit  rounded-full !py-2 !px-2 h-fit">
+              <SecondaryBtn className="w-fit second relative overflow-hidden  rounded-full !py-2 !px-2 h-fit">
                 <Linkedin size={20} />
               </SecondaryBtn>
             </div>
