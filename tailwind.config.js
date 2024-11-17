@@ -3,7 +3,12 @@ export default {
   content: ["./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sora: ['Sora', 'sans-serif'],
+        ruso: ['"Russo One"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
