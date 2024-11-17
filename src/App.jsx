@@ -1,5 +1,6 @@
 import HomePage from './Pages/HomePage/HomePage'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Stats from './Pages/HomePage/Stats';
 function App() {
  
   const router = createBrowserRouter([
@@ -7,6 +8,11 @@ function App() {
       path: "/",
       element: <HomePage />,
       errorElement: <>404 page not found</>,
+    },
+    {
+      path: "/Stats",
+      element: <Stats />,
+     
     },
   ]);
   return <RouterProvider router={router} />;

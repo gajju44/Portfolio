@@ -7,7 +7,7 @@ import { Download, Twitter, Instagram, Linkedin, Github } from "lucide-react";
 function Introduction() {
   return (
     <>
-      <div className="relative flex flex-col items-start  w-full  xl:max-w-[1320px] 2xl:max-w-[1400px]  mx-auto ">
+      <div className="relative flex flex-col items-start  w-full  xl:max-w-[1320px] 2xl:max-w-[1400px]  mx-auto  ">
       
 
       <svg viewBox="0 0 1320 300" className="animate-stroke">
