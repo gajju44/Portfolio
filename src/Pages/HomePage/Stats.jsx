@@ -28,7 +28,7 @@ const Stats=[
 
   return (
   <>
-  <div className='flex  font-sora w-full justify-evenly py-10'>
+  <div className='flex flex-wrap  font-sora w-full justify-evenly py-10'>
 
   {Stats.map((data,index)=>(
     <span key={index} className=' font-medium flex items-center text-[#dddddd]' style={{ fontSize: "clamp(30px, 5vw, 72px)" }}> {data.Number}<span className='text-lg  w-24 inline-block ml-4' style={{ fontSize: "clamp(14px, 1.5vw, 18px)" }}> {data.Text}</span></span>
