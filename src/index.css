@@ -97,10 +97,10 @@ width: 322px;
 height: 308px;
 right: -200px;
 top: -300px;
-z-index: -1;
+z-index: -1000;
 background: linear-gradient(260deg, #8750f7 0%, rgba(115, 67, 210, 0) 100%);
 /* opacity: 0.59; */
-filter: blur(164.5px);
+filter: blur(155.5px);
 border-radius: 9999px;
 }
 
@@ -146,6 +146,11 @@ border-radius: 9999px;
     background: linear-gradient(to right, var(--PrimaryColor) 0%, var(--LightBG) 100%);
     -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+  }
+
+  .Service-Btn:hover{
+        background: linear-gradient(to right,  var(--PrimaryColor ) 40%, var(--LightText) 100%);
+
   }
   
   

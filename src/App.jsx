@@ -6,21 +6,17 @@ function App() {
  
   const router = createBrowserRouter([
 
+    
     {
       path: "/",
-      element: <UnderDevelopment />,
+      element: <HomePage />,
       errorElement: <>404 page not found</>,
     },
-    // {
-    //   path: "/",
-    //   element: <HomePage />,
-    //   errorElement: <>404 page not found</>,
-    // },
-    // {
-    //   path: "/Stats",
-    //   element: <Stats />,
+    {
+      path: "/Stats",
+      element: <Stats />,
      
-    // },
+    },
   ]);
   return <RouterProvider router={router} />;
 }

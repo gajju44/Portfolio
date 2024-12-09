@@ -1,15 +1,38 @@
 import React from 'react'
 
 function Stats() {
+
+const Stats=[
+  {
+    Number:'3+',
+    Text:'Years of Experience',
+
+  },
+  {
+    Number:'5+',
+    Text:'Project Completed',
+
+  },
+  {
+    Number:'4+',
+    Text:'Happy Clients',
+
+  },
+  {
+    Number:'3+',
+    Text:'Client Companies',
+
+  },
+
+]
+
   return (
   <>
-  <div className='flex gap-44 font-sora w-full justify-center py-10'>
+  <div className='flex  font-sora w-full justify-evenly py-10'>
 
-    <span className='text-7xl font-medium flex items-center text-[#dddddd]'> 3<span className='text-lg  w-24 inline-block ml-4'> Years of Experience</span></span>
-    <span className='text-7xl font-medium flex items-center text-[#dddddd]'> 5+<span className='text-lg  w-24 inline-block ml-4'> Project Completed</span></span>
-    <span className='text-7xl font-medium flex items-center text-[#dddddd]'> 2+<span className='text-lg  w-24 inline-block ml-4'> Happy Clients</span></span>
-    <span className='text-7xl font-medium flex items-center text-[#dddddd]'> 3<span className='text-lg  w-24 inline-block ml-4'> Years of Experience</span></span>
-
+  {Stats.map((data,index)=>(
+    <span key={index} className=' font-medium flex items-center text-[#dddddd]' style={{ fontSize: "clamp(30px, 5vw, 72px)" }}> {data.Number}<span className='text-lg  w-24 inline-block ml-4' style={{ fontSize: "clamp(14px, 1.5vw, 18px)" }}> {data.Text}</span></span>
+) )}
   </div>
   </>
   )

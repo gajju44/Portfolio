@@ -9,7 +9,7 @@ import { useState } from 'react';
 // }, []);
 
 
-function HeaderBtn({ Text, Img, Link }) {
+function HeaderBtn({ Text, Img, Link, className }) {
 
   // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -22,7 +22,7 @@ function HeaderBtn({ Text, Img, Link }) {
 
     
     <NavLink to={Link} className={({ isActive }) =>
-        `${isActive ? 'after:scale-x-100' : ''} py-[30px]  underline-animation relative gap-1 font-medium text-[16px] flex justify-center items-center`} >
+        `${isActive ? 'after:scale-x-100' : ''} py-[30px] ${className} underline-animation relative gap-1 font-medium flex justify-center items-center`} style={{ fontSize: "clamp(12px, 1.3vw, 16px)" }} >
       {Text} 
       {/* {Img && <img src={Img} alt={Text} className="w-5 h-5" />} */}
     </NavLink>
