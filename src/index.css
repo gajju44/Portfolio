@@ -46,7 +46,9 @@
   width: 100%;
   height: 100%;
   z-index: -100;
-  animation: breathing 4s ease-in-out infinite; 
+ animation: stroke 3s ease forwards, breathing 4s ease-in-out infinite;   stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-text-stroke: 2px black; 
 }
 
 .svgtext{
@@ -54,11 +56,18 @@
   stroke-width: 1px;
   font-size: 300px;
   font-family: var(--Ruso);
-  font-weight: lighter;
  
   letter-spacing: 2px;
  
 }
+
+@media (max-width:1023px) {
+  .svgtext{
+    stroke-width: 2px;
+
+  }
+}
+
 
 @keyframes breathing {
   0%, 100% {
@@ -66,6 +75,20 @@
   }
   50% {
     transform: scale(1.1); 
+  }
+}
+
+
+@keyframes stroke {
+  0% {
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 1;
+  }
+  100% {
+    stroke-dashoffset: 100%;
+    stroke-dasharray: 100% 0;
+    stroke-width: 1;
   }
 }
 
@@ -78,7 +101,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-image: linear-gradient(#8750f7, #8750f7);
-  transition: .5s;
+  transition: .8s;
   z-index: -1;
   border-radius: 50%;
 }
@@ -148,10 +171,12 @@ border-radius: 9999px;
       -webkit-text-fill-color: transparent;
   }
 
-  .Service-Btn:hover{
+  .Service-Btn{
         background: linear-gradient(to right,  var(--PrimaryColor ) 40%, var(--LightText) 100%);
 
   }
+
+ 
   
   
   @media (prefers-color-scheme: light) {

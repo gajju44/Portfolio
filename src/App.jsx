@@ -1,6 +1,5 @@
 import HomePage from './Pages/HomePage/HomePage'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Stats from './Pages/HomePage/Stats';
 import UnderDevelopment from './Pages/HomePage/UnderDevelopment';
 function App() {
  
@@ -9,14 +8,10 @@ function App() {
     
     {
       path: "/",
-      element: <HomePage />,
+      element: <UnderDevelopment />,
       errorElement: <>404 page not found</>,
     },
-    {
-      path: "/Stats",
-      element: <Stats />,
-     
-    },
+ 
   ]);
   return <RouterProvider router={router} />;
 }

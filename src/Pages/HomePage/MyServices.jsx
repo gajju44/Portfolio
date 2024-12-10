@@ -1,4 +1,4 @@
-import React from "react";
+import {useState} from "react";
 import Arrow from '../../assets/HomePage/Arrow.jsx'
 
 
@@ -26,11 +26,14 @@ const ServicesBtns=[
 ]
 
 function MyServices() {
+
+  const [activeCard, setActiveCard] = useState(0);
+
   return (
     <>
-      <div className="bg-black font-sora flex flex-col items-center p-24 w-full gap-14">
+      <div className="bg-black font-sora flex flex-col items-center md:px-3 py-24 lg:px-10 xl:p-24 w-full gap-14">
         
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center px-1  gap-4">
           <h1
             className="font-bold md:text-left text-center Hero-Title leading-[1.2]"
             style={{ fontSize: "clamp(30px, 4vw, 45px)" }}
@@ -45,19 +48,29 @@ function MyServices() {
               </p>
         </div>
 
-        <div className="flex flex-col w-full ">
-
+        <div className="flex flex-col w-full border-t border-[#2a1454] relative">
+        <div 
+          className="absolute Service-Btn h-[149px]  md:h-[105px] w-full transition-all duration-500 ease-in-out"
+          style={{
+            top: window.innerWidth >= 768 ? `${activeCard * 105}px` : `${activeCard * 149}px`,
+            zIndex: 1,
+            opacity: 0.9,
+          }}
+        />
         {ServicesBtns.map((data,index)=>(
-                <a href="" key={index} className="Service-Btn flex justify-between items-center p-7 w-full border-y border-[#2a1454] group">
-                        <span className="font-bold text-[#8750f7] group-hover:text-white flex items-center" style={{ fontSize: "clamp(16px, 5vw, 20px)" }}>{data.Number} &nbsp;&nbsp; <span className="text-white" style={{ fontSize: "clamp(20px, 5vw, 30px)" }}>{data.Heading}</span>
+                <a href="" key={index} className=" z-50 min-h-[149px] max-h-[149px] md:min-h-[105px] md:max-h-[105px] flex flex-col md:flex-row justify-between gap-2 md:gap-auto md:items-center p-7 sm:px-3 md:px-5 lg:p-7 w-full border-b border-[#2a1454] "
+                onMouseEnter={() => setActiveCard(index)}
+                onMouseLeave={()=>setActiveCard(0)}
+                >
+                        <span className={`font-bold text-[#8750f7] ${activeCard ==index ? 'text-white' :''}  flex transition-all duration-1000 items-center md:w-[50%] lg:w-[40%]`} style={{ fontSize: "clamp(16px, 5vw, 20px)" }}>{data.Number} &nbsp;&nbsp; <span className="text-white" style={{ fontSize: "clamp(20px, 2.1vw, 30px)" }}>{data.Heading}</span>
                         </span>
 
-                    <div className="flex gap-28">
-                        <p className="max-w-[560px]  group-hover:text-[#dddddd]" style={{ fontSize: "clamp(14px, 2vw, 16px)" }}>
+                    <div className="flex gap-5 md:gap-12 lg:gap-28">
+                        <p className={`max-w-[560px] ${activeCard ==index ? 'text-[#dddddd]' :''} `} style={{ fontSize: "clamp(12px, 1.2vw, 16px)" }}>
                               {data.Description}
                            </p>
 
-                           <button className="group-hover:-rotate-[220deg]  group-hover:text-[white] -rotate-[125deg] text-[#8750f7] transition-all duration-500 "> <Arrow className='w-7 h-7 ' /> </button>
+                           <button className={`${activeCard ==index ? '-rotate-[220deg]' :''} -translate-y-[80%] sm:-translate-y-[80%] md:translate-y-0  ${activeCard ==index ? 'text-white' :''} -rotate-[125deg] text-[#8750f7] transition-all duration-500 `}> <Arrow className='w-7 h-7 ' /> </button>
                            </div>
                 </a>
         ))}

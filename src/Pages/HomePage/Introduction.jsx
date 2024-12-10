@@ -10,7 +10,7 @@ function Introduction() {
       <div className="relative flex flex-col items-start  w-full lg:max-w-[900px]  xl:max-w-[1220px] 2xl:max-w-[1320px]  mx-auto  ">
       
 
-      <svg viewBox="0 0 1320 300" className="animate-stroke">
+      <svg viewBox="0 0 1320 300" className="animate-stroke hidden md:block">
         <text x="50%" y="50%" textAnchor="middle" className="svgtext">
           HI        </text>
       </svg>
@@ -59,13 +59,13 @@ function Introduction() {
                 {" "}
                 {"Download CV"} <DownloadLogo height={18} width={18} />
               </SecondaryBtn>
-              <SecondaryBtn Link='https://www.instagram.com/gajendra_naphade' className="w-fit second relative overflow-hidden  rounded-full !py-2 !px-2 h-fit">
+              <SecondaryBtn Link='https://www.instagram.com/gajendra_naphade' className="ml-[6vw] sm:ml-0 w-fit second relative overflow-hidden  rounded-full !py-2 !px-2 h-fit">
                 <Instagram size={20} />
               </SecondaryBtn>
               <SecondaryBtn Link='https://github.com/gajju44' className="w-fit second relative overflow-hidden  rounded-full !py-2 !px-2 h-fit">
                 <Github  size={20} />
               </SecondaryBtn>
-              <SecondaryBtn Link='https://www.linkedin.com/in/gajendra-naphade/' className="w-fit second relative overflow-hidden  rounded-full !py-2 !px-2 h-fit">
+              <SecondaryBtn Link='https://www.linkedin.com/in/gajendra-naphade/' className="mr-[6vw] sm:mr-0 w-fit second relative overflow-hidden  rounded-full !py-2 !px-2 h-fit">
                 <Linkedin  size={20} />
               </SecondaryBtn>
             </div>

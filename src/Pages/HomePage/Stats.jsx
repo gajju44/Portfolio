@@ -4,23 +4,23 @@ function Stats() {
 
 const Stats=[
   {
-    Number:'3+',
+    Number:'4+',
     Text:'Years of Experience',
 
   },
   {
-    Number:'5+',
+    Number:'10+',
     Text:'Project Completed',
 
   },
   {
-    Number:'4+',
+    Number:'5+',
     Text:'Happy Clients',
 
   },
   {
     Number:'3+',
-    Text:'Client Companies',
+    Text:'Corporate Clients',
 
   },
 
