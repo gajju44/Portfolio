@@ -11,7 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+
+# In your .gitignore
 src/App.jsx
+
 
 
 # Editor directories and files
@@ -24,4 +27,4 @@ src/App.jsx
 *.njsproj
 *.sln
 *.sw?
-App.jsx
+
